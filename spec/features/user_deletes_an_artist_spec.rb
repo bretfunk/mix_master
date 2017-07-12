@@ -1,9 +1,5 @@
-# As a user
-# Given that an artist exists in the database
-# When I visit that artist's show page
-# And I click on "Delete"
-# Then I should be back on the artist index page
-# Then I should not see the artist's name
+require 'rails_helper'
+
 RSpec.feature "User visits an artists profile and clicks delete" do
 scenario "The artist is deleted" do
   Artist.create(name: "Jack Johnson", image_path: "http://cps-static.rovicorp.com/3/JPG_400/MI0003/146/MI0003146038.jpg" )
